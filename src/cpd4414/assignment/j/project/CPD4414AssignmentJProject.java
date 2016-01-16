@@ -22,5 +22,7 @@ public class CPD4414AssignmentJProject {
    public static String stringPower(String string, int power ){
        return "";
    }
+   
+   //TODO: it's Abdul, just check
     
 }
