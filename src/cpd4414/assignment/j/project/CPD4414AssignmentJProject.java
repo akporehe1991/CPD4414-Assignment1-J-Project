@@ -20,9 +20,12 @@ public class CPD4414AssignmentJProject {
     }
     
    public static String stringPower(String string, int power ){
+    
        return "";
    }
    
    //TODO: it's Abdul, just check
+   //Seth: 
+   //took a while to fnd that bloody check mark on the keyboard
     
 }

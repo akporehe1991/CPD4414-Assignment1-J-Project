@@ -73,7 +73,28 @@ public class CPD4414AssignmentJProjectTest {
         String expResult = "";
         String result = CPD4414AssignmentJProject.stringPower(string, power);
         assertEquals(expResult, result);
+    }
+         @Test
+    public void testLessThanOneShouldReturnNull(){
         
+        System.out.println("stringPower");
+        String string = "";
+        int power = 0;
+        String expResult = null;
+        String result = CPD4414AssignmentJProject.stringPower(string, power);
+        assertEquals(expResult, result);
+    }
+        
+         @Test
+    public void testStringAndOneShouldReturnString(){
+        
+        System.out.println("stringPower");
+        String string = "String";
+        int power = 1;
+        String expResult = "String";
+        String result = CPD4414AssignmentJProject.stringPower(string, power);
+        assertEquals(expResult, result);
+    }
         
 //        String string="";
 //        int power = 0;
@@ -84,5 +105,3 @@ public class CPD4414AssignmentJProjectTest {
 //        System.out.println("This a is "+power);
 //        }
     }
-    
-}
