@@ -19,6 +19,8 @@ public class CPD4414AssignmentJProject {
         // TODO: just check
     }
     
-   
+   public static String stringPower(String string, int power ){
+       return "";
+   }
     
 }
