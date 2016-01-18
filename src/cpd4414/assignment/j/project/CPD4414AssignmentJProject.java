@@ -28,6 +28,9 @@ public class CPD4414AssignmentJProject {
        else if (power == 1 && !string.equals("")){
            return string;
        }
+       else if (power == 2 && !string.equals("")){
+           return string+string;
+       }
        return "";
    }
    
