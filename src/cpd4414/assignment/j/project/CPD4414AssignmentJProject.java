@@ -21,10 +21,21 @@ public class CPD4414AssignmentJProject {
     }
     
    public static String stringPower(String string, int power ){
-    
+       if( power < 1) {
+           return null;
+       }
        return "";
    }
    
+//   public void testLessThanOneShouldReturnNull() {
+//
+//        System.out.println("stringPower");
+//        String string = "";
+//        int power = 0;
+//        String expResult = null;
+//        String result = CPD4414AssignmentJProject.stringPower(string, power);
+//        assertEquals(expResult, result);
+//    }
    //TODO: it's Abdul, just check
    //Seth: 
    //took a while to fnd that bloody check mark on the keyboard
