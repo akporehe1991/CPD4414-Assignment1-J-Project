@@ -64,6 +64,7 @@ public class CPD4414AssignmentJProjectTest {
         fail("The test case is a prototype.");
     }
     
+    
     @Test
     public void testEmptyStringShouldReturnEmptyString(){
         
@@ -104,4 +105,19 @@ public class CPD4414AssignmentJProjectTest {
 //        }else if(power==0){
 //        System.out.println("This a is "+power);
 //        }
+    
+    /**
+     *
+     */
+        
+       @Test
+    public void testStringAndOneShouldReturnStringDoubled(){
+        
+        System.out.println("stringPower");
+        String string = "String";
+        int power = 1;
+        String expResult = "String";
+        String result = CPD4414AssignmentJProject.stringPower(string, power);
+        assertEquals(expResult, result);
+    }
     }
