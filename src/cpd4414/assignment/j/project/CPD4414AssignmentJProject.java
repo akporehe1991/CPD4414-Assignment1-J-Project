@@ -17,6 +17,7 @@ public class CPD4414AssignmentJProject {
     public static void main(String[] args) {
         // TODO code application logic here
         // TODO: just check
+        stringPower("bob" , 2);
     }
     
    public static String stringPower(String string, int power ){

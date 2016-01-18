@@ -111,12 +111,12 @@ public class CPD4414AssignmentJProjectTest {
      */
         
        @Test
-    public void testStringAndOneShouldReturnStringDoubled(){
+    public void testStringAndTwoShouldReturnStringDoubled(){
         
         System.out.println("stringPower");
-        String string = "String";
-        int power = 1;
-        String expResult = "String";
+        String string = "Bob";
+        int power = 2;
+        String expResult = "BobBob";
         String result = CPD4414AssignmentJProject.stringPower(string, power);
         assertEquals(expResult, result);
     }
