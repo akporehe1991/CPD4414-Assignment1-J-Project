@@ -21,8 +21,12 @@ public class CPD4414AssignmentJProject {
     }
     
    public static String stringPower(String string, int power ){
+      
        if( power < 1) {
            return null;
+       }
+       else if (power == 1 && !string.equals("")){
+           return string;
        }
        return "";
    }
