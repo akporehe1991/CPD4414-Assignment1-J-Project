@@ -5,6 +5,7 @@
  */
 package cpd4414.assignment.j.project;
 
+import java.util.Random;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -51,7 +52,7 @@ public class CPD4414AssignmentJProjectTest {
     @Test
     public void testLessThanOneShouldReturnNull() {
 
-        System.out.println("stringPower");
+        System.out.println("testLessThanOneShouldReturnNull");
         String string = "";
         int power = 0;
         String expResult = null;
@@ -62,7 +63,7 @@ public class CPD4414AssignmentJProjectTest {
     @Test
     public void testStringAndOneShouldReturnString() {
 
-        System.out.println("stringPower");
+        System.out.println("testStringAndOneShouldReturnString");
         String string = "String";
         int power = 1;
         String expResult = "String";
@@ -76,14 +77,28 @@ public class CPD4414AssignmentJProjectTest {
     @Test
     public void testStringAndTwoShouldReturnStringDoubled() {
 
-        System.out.println("stringPower");
+        System.out.println("testStringAndTwoShouldReturnStringDoubled");
         String string = "Bob";
         int power = 2;
         String expResult = "BobBob";
         String result = CPD4414AssignmentJProject.stringPower(string, power);
         assertEquals(expResult, result);
     }
-    
-    
+
+    @Test
+    public void testStringAndRandomShouldReturnStringThatRandomNumberTimesMultiplied() {
+        System.out.println("testStringAndRandomShouldReturnStringThatRandomNumberTimesMultiplied");
+        String string = "test";
+        int power = new Random().nextInt(9) + 3;
+
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < power; i++) {
+            builder.append(string);
+        }
+
+        String expResult = builder.toString();
+        String result = CPD4414AssignmentJProject.stringPower(string, power);
+        assertEquals(expResult, result);
+    }
 
 }
