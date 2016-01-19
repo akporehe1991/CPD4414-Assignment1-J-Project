@@ -26,7 +26,16 @@ public class CPD4414AssignmentJProject {
             return string;
         } else if (power == 2 && !string.equals("")) {
             return string + string;
-        } else {
+        } else if(power > 2 && !string.equals("")){
+            
+        StringBuilder builder = new StringBuilder();
+            for (int i = 0; i < power; i++) {
+            builder.append(string);
+            
+            }
+            return builder.toString();
+            
+        }else {
             return "";
         }
         
